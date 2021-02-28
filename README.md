@@ -6,7 +6,7 @@ For this purpose, I wrote a function that allows adjust all parameters realted t
 
 <br/>
 
-![](https://github.com/NaderH84/Bike_Demand_Prediction-Kaggle-/edit/main/control_panel.png)
+![](https://github.com/NaderH84/Bike_Demand_Prediction-Kaggle-/blob/main/control_panel.png)
 
 <br/>
 <br/>

@@ -304,14 +304,16 @@ def training(train, test, validation_size, estimator, target_variable, drop_list
                         shap.save_html("index_force_plot.htm", force_plot)
                         force_plot_all = shap.force_plot(explainer.expected_value, shap_values, valid_x)
                         shap.save_html("index_force_plot_all.htm", force_plot_all)
-                        shap.summary_plot(shap_values, valid_x)
+                        summary_plot=shap.summary_plot(shap_values, valid_x)
+                        plt.savefig('summary_plot.png')
 
                         top_features = feat_importances.nlargest(10)
                         top_features = top_features.reset_index()
                         top_features = top_features['index'].to_list()    
 
                         for i in top_features:
-                            shap.dependence_plot(i, shap_values, valid_x)
+                            dep_plot = shap.dependence_plot(i, shap_values, valid_x)
+                            plt.savefig(f"dep_plot_{i}.png")
 
                 if final==False and target_type=="con":
                     yhat = fitted_model.predict(test_x).astype(float)

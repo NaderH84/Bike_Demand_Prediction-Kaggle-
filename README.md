@@ -19,11 +19,11 @@ Below you see the **"Dashboard"** implemented for the above mentioned Kaggle Com
 
 The function furhter uses the **SHAP package** to create (observation-level) information on feature importance (i.e., the strength and direction of a feature's association with the target variables) based on the SHAP-value.
 
-This **SHAP Summary Plot**, for example, shows how the hourly bike demand is related to the set of applied explanatory features:
+This **SHAP Summary Plot**, for example, visualizes how the hourly bike demand is related to the set of applied explanatory features:
 
 ![](https://github.com/NaderH84/Bike_Demand_Prediction-Kaggle-/blob/main/summary_plot.png)
 
-The package also allows for an investigation of interaction effects based on the **SHAP Dependency Plots**:
+The package also allows for a visual investigation of interaction effects based on the **SHAP Dependency Plots**:
 
 ![](https://github.com/NaderH84/Bike_Demand_Prediction-Kaggle-/blob/main/dep_plot_weekday.png)
 

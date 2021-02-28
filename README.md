@@ -9,7 +9,7 @@ My personal motivation for conducting this project purpose was not to acheive th
 
 For this purpose, I wrote a function allows for adjusting all relevant parameters related to variable selection, training and scoring through a "dashboard", making it easy to quickly try out different specifications of the set of explanatory variables/model parameters by simply changing the function's arguments. The function includes several ML algorithms (from sklearn: linear/logistic regression, gradient boosting, random forest as well as **lightGBM** - and more to come) for both binary/continuous targets. Other arguments of the function relate to the applied evaluation metric (used in cross-validation) as well as whether or not hyperparameters should be tuned. 
 
-Below you see the **"Dashboard"** implemented for the Kaggle Competition:
+Below you see the **"Dashboard"** implemented for the above mentioned Kaggle Competition:
 
 <br/>
 
@@ -17,6 +17,14 @@ Below you see the **"Dashboard"** implemented for the Kaggle Competition:
 
 <br/>
 
-The function 
+The function furhter uses the **SHAP package** to create (observation-level) information on feature importance (i.e., the strength and direction of a feature's association with the target variables) based on the SHAP-value.
+
+This ***SHAP Summary Plot***, for example, shows how the hourly bike demand is related to the set of applied explanatory features:
+
+![](https://github.com/NaderH84/Bike_Demand_Prediction-Kaggle-/blob/main/summary_plot.png)
+
+The package also allows for an investigation of interaction effects based on the ***SHAP Dependency Plots***:
+
+![](https://github.com/NaderH84/Bike_Demand_Prediction-Kaggle-/blob/main/dep_plot_weekday.png)
 
 

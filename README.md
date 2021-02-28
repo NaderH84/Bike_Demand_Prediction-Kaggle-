@@ -1,5 +1,4 @@
-## Bike Sharing Demand-Prediction (Kaggle Competition)\ 
--- applying my own sample splitting/training/scoring/model evaluation function
+## Bike Sharing Demand-Prediction (Kaggle Competition) \-- applying my own sample splitting/training/scoring/model evaluation function
 https://www.kaggle.com/c/bike-sharing-demand/overview
 
 ---

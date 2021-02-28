@@ -1,5 +1,7 @@
-## Bike Sharing Demand-Prediction (Kaggle Competition) \n
+## Bike Sharing Demand-Prediction (Kaggle Competition)
 https://www.kaggle.com/c/bike-sharing-demand/overview
+
+---
 
 
 This project uses Kaggle data to predict Bike Sharing Demand on an hourly basis.   

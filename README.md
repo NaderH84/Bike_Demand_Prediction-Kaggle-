@@ -7,9 +7,9 @@ This project uses Kaggle data to predict Bike Sharing Demand on an hourly basis.
 #### Motivation:
 My personal motivation for conducting this project purpose was not to acheive the best score but rather to create a generic workflow that enables me to vary the sample/variable composition (e.g., size of validation/test data sets, included explanatory variables) as well as the key parameters related to training and scoring a model (e.g., applied algorithm(s), evaluation metric) by simply setting the desired function arguments, in order to find the best performing approach while keeping the workflow minimalistic and clear.
 
-For this purpose, I wrote a function allows for adjusting all relevant parameters related to variable selection, training and scoring through a "dashboard", making it easy to quickly try out different specifications of the set of explanatory variables/model parameters by simply changing the function's arguments. The function includes several ML algorithms (from sklearn: linear/logistic regression, gradient boosting, random forest as well as lightGBM - and more to come) for both binary/continuous targets. Other arguments of the function relate to the applied evaluation metric (used in cross-validation) as well as whether or not hyperparameters shoudl be tuned. 
+For this purpose, I wrote a function allows for adjusting all relevant parameters related to variable selection, training and scoring through a "dashboard", making it easy to quickly try out different specifications of the set of explanatory variables/model parameters by simply changing the function's arguments. The function includes several ML algorithms (from sklearn: linear/logistic regression, gradient boosting, random forest as well as **lightGBM** - and more to come) for both binary/continuous targets. Other arguments of the function relate to the applied evaluation metric (used in cross-validation) as well as whether or not hyperparameters should be tuned. 
 
-This is an overiew of all key arguments etc. from the workflow implemented for this project:
+Below you see the **"Dashboard"** implemented for the Kaggle Competition:
 
 <br/>
 

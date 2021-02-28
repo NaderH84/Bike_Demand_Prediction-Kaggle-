@@ -1,6 +1,9 @@
 ## Bike Sharing Demand-Prediction (Kaggle Competition)
+https://www.kaggle.com/c/bike-sharing-demand/overview
 
 This project uses Kaggle data to predict Bike Sharing Demand on an hourly basis.   
+
+My personal motivation for this purpose was to create a workflow that allows for an optimal 
 
 For this purpose, I wrote a function that allows adjust all relevant parameters related to variable selection, training and scoring through a "dashboard", making it easy to quickly try out different specifications of the set of explanatory variables/model parameters. 
 

@@ -3,10 +3,10 @@ https://www.kaggle.com/c/bike-sharing-demand/overview
 
 ---
 
-
+#### Motivation:
 This project uses Kaggle data to predict Bike Sharing Demand on an hourly basis.   
 
-My personal motivation for this purpose was to create a workflow that allows for an optimal 
+My personal motivation for this purpose was to create a generic workflow that enables me to vary the sample/variable composition (e.g., size of validation/test data sets, included explanatory variables) as well as all key parameters related to training and scoring a model (r.g., applied algorithm(s), evaluation metric) as convenient as possible, in order to find the best performing approach.
 
 For this purpose, I wrote a function that allows adjust all relevant parameters related to variable selection, training and scoring through a "dashboard", making it easy to quickly try out different specifications of the set of explanatory variables/model parameters. 
 

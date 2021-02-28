@@ -17,7 +17,7 @@ Below you see the **"Dashboard"** implemented for the above mentioned Kaggle Com
 
 <br/>
 
-The function furhter uses the **SHAP package** to create (observation-level) information on feature importance (i.e., the strength and direction of a feature's association with the target variables) based on the SHAP-value.
+The function further uses the **SHAP package** to create (observation-level) information on feature importance (i.e., the strength and direction of a feature's association with the target variables) based on the SHAP-value.
 
 This **SHAP Summary Plot**, for example, visualizes how the hourly bike demand is related to the set of applied explanatory features:
 

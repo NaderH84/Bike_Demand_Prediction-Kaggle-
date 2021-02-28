@@ -289,12 +289,7 @@ def training(train, test, validation_size, estimator, target_variable, drop_list
 
                     if estimator=="lgbm":
                         fi_selected.to_excel(r'fi_selected.xlsx')
-                        # fig = plt.figure(figsize=(20,10))
                         feat_importances = pd.Series(fitted_model.feature_importances_, index=list_all_Features)
-                        # feat_importances.nlargest(10).plot(kind='barh', color="green")
-                        # plt.title("Feature Importance from Light GBM")
-                        # plt.savefig('Feature Importance from Light GBM.png',  bbox_inches = "tight")
-
                         explainer = shap.TreeExplainer(fitted_model)
                         shap_values = explainer.shap_values(valid_x)
 
@@ -304,15 +299,15 @@ def training(train, test, validation_size, estimator, target_variable, drop_list
                         shap.save_html("index_force_plot.htm", force_plot)
                         force_plot_all = shap.force_plot(explainer.expected_value, shap_values, valid_x)
                         shap.save_html("index_force_plot_all.htm", force_plot_all)
-                        summary_plot=shap.summary_plot(shap_values, valid_x)
-                        plt.savefig('summary_plot.png')
+                        shap.summary_plot(shap_values, valid_x)
+                        plt.savefig('summary_plot.png', show=False)
 
                         top_features = feat_importances.nlargest(10)
                         top_features = top_features.reset_index()
                         top_features = top_features['index'].to_list()    
 
                         for i in top_features:
-                            dep_plot = shap.dependence_plot(i, shap_values, valid_x)
+                            shap.dependence_plot(i, shap_values, valid_x, show=False)
                             plt.savefig(f"dep_plot_{i}.png")
 
                 if final==False and target_type=="con":

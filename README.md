@@ -1,14 +1,15 @@
 ## Bike Sharing Demand-Prediction (Kaggle Competition)
 
-In this project, I trained I used the lightGBM estimator to predict hourly bike sharing demand.  
+This project uses Kaggle data to predict Bike Sharing Demand on an hourly basis.   
 
-For this purpose, I wrote a function that allows adjust all parameters realted to variable selection, training and scoring through a "dashboard", making it easy to quickly try out different specifications of the set of explanatory variables/model parameters. 
+For this purpose, I wrote a function that allows adjust all relevant parameters related to variable selection, training and scoring through a "dashboard", making it easy to quickly try out different specifications of the set of explanatory variables/model parameters. 
 
 <br/>
 
 ![](https://github.com/NaderH84/Bike_Demand_Prediction-Kaggle-/blob/main/control_panel.png)
 
 <br/>
+
 <br/>
 
 A <strong> click on the image below </strong> opens an interactive Plotly Bubble Plot that provides country-level information on the average cases and deaths from the start of the pandemic up to the first days of Janaury 2021:

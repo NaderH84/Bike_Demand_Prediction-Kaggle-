@@ -281,7 +281,7 @@ def training(train, test, validation_size, estimator, target_variable, drop_list
 
                     if estimator=="rf":
                         fi_selected.to_excel(r'fi_selected.xlsx')
-                        fig = plt.figure(figsize=(20,10))
+                        fig = plt.figure(figsize=(20,20))
                         feat_importances = pd.Series(fitted_model.feature_importances_, index=list_all_Features)
                         feat_importances.nlargest(30).plot(kind='barh', color="green")
                         plt.title("Feature Importance from Random Forest")
@@ -299,9 +299,9 @@ def training(train, test, validation_size, estimator, target_variable, drop_list
                         shap.save_html("index_force_plot.htm", force_plot)
                         force_plot_all = shap.force_plot(explainer.expected_value, shap_values, valid_x)
                         shap.save_html("index_force_plot_all.htm", force_plot_all)
-                        plt.figure(figsize=(20,20))
+                        plt.figure(figsize=(10,20))
                         shap.summary_plot(shap_values, valid_x, show=False)
-                        plt.savefig('summary_plot.png')
+                        plt.savefig('summary_plot.png',  bbox_inches = "tight")
 
                         top_features = feat_importances.nlargest(10)
                         top_features = top_features.reset_index()
@@ -310,7 +310,7 @@ def training(train, test, validation_size, estimator, target_variable, drop_list
                         for i in top_features:
                             plt.figure(figsize=(20,20))
                             shap.dependence_plot(i, shap_values, valid_x, show=False)
-                            plt.savefig(f"dep_plot_{i}.png")
+                            plt.savefig(f"dep_plot_{i}.png",  bbox_inches = "tight")
 
                 if final==False and target_type=="con":
                     yhat = fitted_model.predict(test_x).astype(float)
